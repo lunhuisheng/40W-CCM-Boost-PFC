@@ -1,0 +1,12 @@
+{
+  "analysis_basis": "Continuous averaged small-signal estimates; switching delay and nonlinear limits excluded",
+  "current_loop_gain_margin_dB": null,
+  "current_loop_phase_margin_deg": 80.6608755291019,
+  "current_loop_gain_crossover_Hz": 3040.2987798718814,
+  "current_loop_phase_crossover_Hz": 0,
+  "voltage_loop_gain_margin_dB": null,
+  "voltage_loop_phase_margin_deg": 79.552495108566376,
+  "voltage_loop_gain_crossover_Hz": 8.1348643070961124,
+  "voltage_loop_phase_crossover_Hz": 0,
+  "gain_margin_interpretation": "No useful finite -180 degree phase crossover in this idealized PI-plus-integrator model; numerical Inf is exported as JSON null."
+}

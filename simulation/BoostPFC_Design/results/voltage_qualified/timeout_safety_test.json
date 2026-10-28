@@ -1,0 +1,15 @@
+{
+  "forced_threshold_V": 32.891125496954288,
+  "passive_ceiling_V": 31.891125496954288,
+  "expected_timeout_s": 0.5,
+  "final_state": -1,
+  "enable_max": 0,
+  "pwm_max": 0,
+  "minimum_load_resistance_ohm": 1.0E+9,
+  "output_voltage_max_V": 31.422065693981182,
+  "pass_timeout_state": true,
+  "pass_bypass_remained_open": true,
+  "pass_pwm_remained_off": true,
+  "pass_load_remained_disconnected": true,
+  "pass_all": true
+}

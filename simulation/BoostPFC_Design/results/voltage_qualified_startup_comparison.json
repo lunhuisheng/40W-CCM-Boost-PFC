@@ -1,0 +1,86 @@
+{
+  "change": "Fixed 200 ms command replaced by 90% passive-ceiling voltage qualification",
+  "constants": {
+    "precharge_resistance_ohm": 10,
+    "inductance_H": 0.00047,
+    "output_capacitance_F": 0.0022,
+    "switching_frequency_Hz": 50000
+  },
+  "cases": [
+    {
+      "name": "No precharge",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\baseline_no_precharge\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 33.919655132290437,
+      "settling_time_2percent_cycle_average_s": 0.559999,
+      "settled": true
+    },
+    {
+      "name": "10 ohm / 80 ms / load connected",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\precharge_10ohm_80ms\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 20.862179950369484,
+      "settling_time_2percent_cycle_average_s": 0.639999,
+      "settled": true
+    },
+    {
+      "name": "10 ohm / 200 ms / load connected",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\precharge_10ohm_200ms_load_connected\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 20.086474758404442,
+      "settling_time_2percent_cycle_average_s": 0.759999,
+      "settled": true
+    },
+    {
+      "name": "10 ohm / 200 ms / delayed load",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\precharge_10ohm_200ms_delayed_load\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 6.8752991703556754,
+      "settling_time_2percent_cycle_average_s": 0.759999,
+      "settled": true
+    },
+    {
+      "name": "Voltage qualified / delayed load",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\results\\voltage_qualified\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 7.8732148150122008,
+      "settling_time_2percent_cycle_average_s": 0.719999,
+      "settled": true
+    }
+  ],
+  "trigger": {
+    "threshold_V": 28.702012947258861,
+    "qualification_time_s": 0.005,
+    "timeout_time_s": 0.5,
+    "time_s": 0.16949,
+    "ac_phase_deg": 170.82000000000016,
+    "rectified_phase_deg": 170.82000000000016,
+    "rectified_input_V": 4.0148518434031075,
+    "output_voltage_V": 28.899740894820344,
+    "inductor_current_A": 0.008542237964687463,
+    "next_rectified_peak_time_s": 0.175,
+    "next_rectified_peak_V": 32.541125497202053,
+    "output_voltage_at_next_peak_V": 29.462033546564157,
+    "rectified_minus_output_at_next_peak_V": 3.0790919506378955,
+    "peak_inductor_current_A": 7.8732148150122008,
+    "exceeds_4p5A_reference_limit": true,
+    "timeout_occurred": false
+  },
+  "steady_state": {
+    "output_voltage_mean_V": 39.855352768007741,
+    "output_voltage_error_percent": -0.36161807998064788,
+    "output_ripple_pp_V": 1.5924976932405457,
+    "power_factor": 0.99649715919347948,
+    "thd_percent": 5.4785635676237172,
+    "output_power_W": 39.573478803007774,
+    "pwm_frequency_Hz": 50000.000000000015,
+    "delta_vs_200ms_delayed_load": {
+      "output_voltage_mean_V": 0.034228973682175479,
+      "output_ripple_pp_V": -0.022756492439135911,
+      "power_factor": 2.6165283936174788E-6,
+      "thd_percentage_point": 0.025867405768034146,
+      "output_power_W": 0.10285335975007115
+    }
+  },
+  "peak_change_vs_200ms_delayed_load_percent": 14.514505040875202,
+  "pass_peak_current_limit": false,
+  "pass_voltage_regulation": true,
+  "pass_output_ripple": true,
+  "pass_pf": true,
+  "pass_thd": true
+}

@@ -1,0 +1,26 @@
+{
+  "thresholds": {
+    "output_voltage_V": 31.253302987015203,
+    "rectified_voltage_V": 31.8903029870152,
+    "absolute_voltage_difference_V": 1.5,
+    "inductor_current_A": 0.25,
+    "hold_time_s": 0.0002,
+    "timeout_s": 0.5
+  },
+  "timed_out": false,
+  "triggered": true,
+  "trigger_time_s": 0.464701,
+  "trigger_ac_phase_deg": 84.6180000000004,
+  "trigger_rectified_voltage_V": 32.391495383056885,
+  "trigger_output_voltage_V": 31.256002267320557,
+  "trigger_signed_vrect_minus_vout_V": 1.1354931157363275,
+  "trigger_absolute_voltage_difference_V": 1.1354931157363275,
+  "trigger_inductor_current_A": 0.043867488584386036,
+  "peak_inductor_current_before_bypass_A": 2.781769157104212,
+  "peak_inductor_current_after_bypass_A": 0.75706920381058507,
+  "pwm_max": 0,
+  "minimum_load_resistance_ohm": 1.0E+9,
+  "pass_pwm_off": true,
+  "pass_load_disconnected": true,
+  "pass_all_conditions": true
+}

@@ -1,0 +1,9 @@
+{
+  "assumption": "Ideal bridge/boost diodes, zero MOSFET Rds(on), zero inductor ESR",
+  "Vout_mean_V": 39.8414978293096,
+  "Vout_ripple_pp_V": 1.5490583175554349,
+  "Pin_W": 39.375151516616704,
+  "Pout_W": 39.522861331620618,
+  "efficiency_percent": 100.37513459457185,
+  "PF": 0.99615226306863069
+}

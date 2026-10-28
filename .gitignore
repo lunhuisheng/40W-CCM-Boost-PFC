@@ -1,0 +1,17 @@
+*.slxc
+slprj/
+**/slprj/
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.lck
+*.raw
+*.op.raw
+*.db
+*.log
+__pycache__/
+*.mat
+*.zip
+*.7z
+*.rar
+*.tmp

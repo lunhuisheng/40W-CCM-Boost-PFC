@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-10-25 12:05:07 Asia/Shanghai",
+  "scope": "Independent analytical audit; frozen Simulink model not modified or simulated by this script",
+  "model_classes": {
+    "continuous_average": "PI and averaged small-signal plants used here",
+    "discrete_delay_sensitivity": "exact frequency-domain delay bracket only; not an identified sampled-data model",
+    "switched_behavioral": "frozen cycle-resolved model supplies measured operating points only"
+  },
+  "controller": {
+    "voltage_PI_Kp": 0.26064913237195747,
+    "voltage_PI_Ki_per_s": 2.4565601982728853,
+    "current_PI_Kp": 0.22148228207808041,
+    "current_PI_Ki_per_s": 695.80711027679968,
+    "voltage_PI_zero_Hz": 1.5,
+    "current_PI_zero_Hz": 499.99999999999994,
+    "reference_amplitude_limit_A": 4.5,
+    "duty_min": 0,
+    "duty_max": 0.95,
+    "controller_execution_step_s": 1E-6,
+    "switching_frequency_Hz": 50000,
+    "cycle_current_limit_A": 4,
+    "behavioral_fault_latch_A": 4.5,
+    "anti_windup": "conditional integration in both PI loops when the limited output would be driven farther into saturation"
+  },
+  "original_analysis": {
+    "basis": "24 Vac ideal continuous averaged PI-times-integrator; no load pole, losses, delay, limits or inner-loop closure in outer loop",
+    "current_loop": {
+      "gain_crossover_Hz": 3040.2987798718814,
+      "phase_margin_deg": 80.6608755291019,
+      "gain_margin_dB": [],
+      "phase_crossover_Hz": [],
+      "gain_margin_class": "infinite_no_finite_phase_crossover",
+      "closed_loop_poles_rad_per_s": [
+        -14866.176053472031,
+        -3983.3798680667269
+      ],
+      "closed_loop_stable": true
+    },
+    "voltage_loop": {
+      "gain_crossover_Hz": 8.1348643070961124,
+      "phase_margin_deg": 79.552495108566376,
+      "gain_margin_dB": [],
+      "phase_crossover_Hz": [],
+      "gain_margin_class": "infinite_no_finite_phase_crossover",
+      "closed_loop_poles_rad_per_s": [
+        -37.69911184307751,
+        -12.566370614359174
+      ],
+      "closed_loop_stable": true
+    }
+  },
+  "plants_and_feedback": {
+    "current_loop": "Unity feedback of measured iL.  Around the line peak, Gid(s)=Vout/(L*s+rL+Dpeak*Rds_on).  The feed-forward duty term is constant for the local iRef-to-iL perturbation.",
+    "voltage_loop": "Unity feedback of Vout.  vLoop commands sinusoidal peak current through iRef=vLoop*vrect/Vpeak.  Line-cycle energy linearization gives Gvi(s)=(Vac/sqrt(2))/(C*Vout*s+2*Vout/R). The outer open loop also includes the closed current loop Ti(s)."
+  },
+  "working_point_analysis_basis": "Continuous CCM line-peak current plant with averaged conduction resistance; line-cycle averaged voltage plant with 40-ohm load damping and closed inner loop",
+  "operating_points": [
+    {
+      "input_rms_V": 20,
+      "measured_output_mean_V": 39.982927377804316,
+      "measured_duty_mean_near_rectified_peak": 0.36385344598673425,
+      "measured_duty_min": 0.28742892266658165,
+      "measured_boost_headroom_V": 13.098656128470001,
+      "incremental_series_resistance_ohm": 0.11455413783946938,
+      "current_loop": {
+        "gain_crossover_Hz": 3038.7932132546284,
+        "phase_margin_deg": 81.387689625744741,
+        "gain_margin_dB": [],
+        "phase_crossover_Hz": [],
+        "gain_margin_class": "infinite_no_finite_phase_crossover",
+        "closed_loop_poles_rad_per_s": [
+          -15187.909034876779,
+          -3897.3338111609437
+        ],
+        "closed_loop_stable": true
+      },
+      "voltage_loop": {
+        "gain_crossover_Hz": 5.8580696182325722,
+        "phase_margin_deg": 107.32281063370446,
+        "gain_margin_dB": [],
+        "phase_crossover_Hz": [],
+        "gain_margin_class": "infinite_no_finite_phase_crossover",
+        "closed_loop_poles_rad_per_s": [
+          -15132.171982439831,
+          -3911.1576582041321,
+          -57.80732294056488,
+          -6.8331551804622954
+        ],
+        "closed_loop_stable": true
+      },
+      "switching_to_current_crossover_ratio": 16.453900114660538,
+      "current_to_voltage_crossover_ratio": 518.73627513690383
+    },
+    {
+      "input_rms_V": 24,
+      "measured_output_mean_V": 39.991013193204225,
+      "measured_duty_mean_near_rectified_peak": 0.22281709538116506,
+      "measured_duty_min": 0.18322592333777316,
+      "measured_boost_headroom_V": 7.4498876940030456,
+      "incremental_series_resistance_ohm": 0.1089126838152466,
+      "current_loop": {
+        "gain_crossover_Hz": 3039.4152373596967,
+        "phase_margin_deg": 81.3534121509429,
+        "gain_margin_dB": [],
+        "phase_crossover_Hz": [],
+        "gain_margin_class": "infinite_no_finite_phase_crossover",
+        "closed_loop_poles_rad_per_s": [
+          -15175.823889363819,
+          -3901.2262137441376
+        ],
+        "closed_loop_stable": true
+      },
+      "voltage_loop": {
+        "gain_crossover_Hz": 7.3236077939226591,
+        "phase_margin_deg": 104.69952580842615,
+        "gain_margin_dB": [],
+        "phase_crossover_Hz": [],
+        "gain_margin_class": "infinite_no_finite_phase_crossover",
+        "closed_loop_poles_rad_per_s": [
+          -15108.803819486471,
+          -3917.9603396711582,
+          -65.81216955243373,
+          -7.2010471251525292
+        ],
+        "closed_loop_stable": true
+      },
+      "switching_to_current_crossover_ratio": 16.450532781902613,
+      "current_to_voltage_crossover_ratio": 415.01611267084661
+    },
+    {
+      "input_rms_V": 28,
+      "measured_output_mean_V": 39.99197442953875,
+      "measured_duty_mean_near_rectified_peak": 0.053687343717528882,
+      "measured_duty_min": 0.032210615240863952,
+      "measured_boost_headroom_V": 1.7939946804707105,
+      "incremental_series_resistance_ohm": 0.10214749374870116,
+      "current_loop": {
+        "gain_crossover_Hz": 3039.5126705999164,
+        "phase_margin_deg": 81.310506206449247,
+        "gain_margin_dB": [],
+        "phase_crossover_Hz": [],
+        "gain_margin_class": "infinite_no_finite_phase_crossover",
+        "closed_loop_poles_rad_per_s": [
+          -15156.92444106127,
+          -3906.1846125795419
+        ],
+        "closed_loop_stable": true
+      },
+      "voltage_loop": {
+        "gain_crossover_Hz": 8.7538246672729727,
+        "phase_margin_deg": 102.71582088884939,
+        "gain_margin_dB": [],
+        "phase_crossover_Hz": [],
+        "gain_margin_class": "infinite_no_finite_phase_crossover",
+        "closed_loop_poles_rad_per_s": [
+          -15078.528982202699,
+          -3925.914752261373,
+          -73.9122297563336,
+          -7.4803621476919853
+        ],
+        "closed_loop_stable": true
+      },
+      "switching_to_current_crossover_ratio": 16.45000545108153,
+      "current_to_voltage_crossover_ratio": 347.22110461766857
+    }
+  ],
+  "current_loop_delay_sensitivity_24Vac": [
+    {
+      "assumed_delay_s": 1E-5,
+      "gain_crossover_Hz": 3039.4152066721444,
+      "phase_margin_deg": 70.411517310331391,
+      "gain_margin_dB": 18.312277271311796,
+      "phase_crossover_Hz": 24701.652155458425,
+      "phase_crossover_below_25kHz_nyquist": true,
+      "validity_note": "Sensitivity estimate only; phase crossover near the switching/Nyquist region is outside a trustworthy averaged-model range",
+      "delay_in_switching_periods": 0.5
+    },
+    {
+      "assumed_delay_s": 2E-5,
+      "gain_crossover_Hz": 3039.4152066721444,
+      "phase_margin_deg": 59.469622559984,
+      "gain_margin_dB": 12.178086078555747,
+      "phase_crossover_Hz": 12198.05346389256,
+      "phase_crossover_below_25kHz_nyquist": true,
+      "validity_note": "Sensitivity estimate only; phase crossover near the switching/Nyquist region is outside a trustworthy averaged-model range",
+      "delay_in_switching_periods": 1
+    },
+    {
+      "assumed_delay_s": 3.0000000000000004E-5,
+      "gain_crossover_Hz": 3039.4152066721444,
+      "phase_margin_deg": 48.527727809636644,
+      "gain_margin_dB": 8.5346299842938347,
+      "phase_crossover_Hz": 8027.7038764688687,
+      "phase_crossover_below_25kHz_nyquist": true,
+      "validity_note": "Sensitivity estimate only; phase crossover near the switching/Nyquist region is outside a trustworthy averaged-model range",
+      "delay_in_switching_periods": 1.5
+    }
+  ],
+  "calculation_method": {
+    "continuous_margin": "MATLAB margin(): phase margin at the 0 dB gain crossover and gain margin at a finite -180 degree phase crossover",
+    "closed_loop_stability": "All poles of feedback(open_loop,1) must have strictly negative real part",
+    "delay_margin": "Frequency response multiplied by exp(-j*w*Tdelay); crossings found by logarithmic-frequency interpolation"
+  },
+  "interpretation": {
+    "gain_margin": "Infinite means no finite -180 degree phase crossing in the applicable continuous model; it is not proof of unlimited robustness",
+    "delay": "Delay cases are sensitivity bounds.  The actual PWM/sampling delay was not identified from the switched model",
+    "nonlinear_limits": "Bode results apply only while duty, current-reference and actual-current protection limits are inactive",
+    "hardware": "No result in this file establishes device-level or hardware stability"
+  },
+  "unverified": [
+    "Frequency-response injection into the frozen switched behavioral model",
+    "Exact sampled-data/PWM small-signal model and effective actuation delay",
+    "Linearization during duty saturation, cycle current limiting or fault latch",
+    "Line-zero-crossing time-periodic stability and subharmonic behavior",
+    "Device parasitics, current-sense/filter delay, computation delay and hardware loop gain"
+  ]
+}

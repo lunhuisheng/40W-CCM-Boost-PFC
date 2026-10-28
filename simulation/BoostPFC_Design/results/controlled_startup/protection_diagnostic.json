@@ -1,0 +1,45 @@
+{
+  "note": "Forced thresholds for diagnostic validation only",
+  "tests": [
+    {
+      "name": "forced_cycle_limit",
+      "forced_cycle_limit_A": 0.2,
+      "forced_fault_limit_A": 4.5,
+      "current_limit_activated": true,
+      "current_limit_activation_count": 55957,
+      "fault_activated": false,
+      "final_state": 4,
+      "peak_iL_A": 4.3466683812679534,
+      "load_ever_connected": true,
+      "fault_time_s": null,
+      "max_pwm_after_fault": null,
+      "max_load_enable_after_fault": null,
+      "max_bypass_enable_after_fault": null,
+      "fault_response_delay_s": null,
+      "max_pwm_in_fault_state": null,
+      "max_load_enable_in_fault_state": null,
+      "max_bypass_enable_in_fault_state": null,
+      "pass_expected_behavior": true
+    },
+    {
+      "name": "forced_overcurrent_fault",
+      "forced_cycle_limit_A": 4,
+      "forced_fault_limit_A": 0.2,
+      "current_limit_activated": false,
+      "current_limit_activation_count": 0,
+      "fault_activated": true,
+      "final_state": -2,
+      "peak_iL_A": 2.781769157104212,
+      "load_ever_connected": false,
+      "fault_time_s": 0.466198,
+      "max_pwm_after_fault": 0,
+      "max_load_enable_after_fault": 0,
+      "max_bypass_enable_after_fault": 1,
+      "fault_response_delay_s": 9.9999999997324451E-7,
+      "max_pwm_in_fault_state": 0,
+      "max_load_enable_in_fault_state": 0,
+      "max_bypass_enable_in_fault_state": 0,
+      "pass_expected_behavior": true
+    }
+  ]
+}

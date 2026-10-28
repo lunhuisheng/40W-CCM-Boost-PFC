@@ -1,0 +1,24 @@
+[
+  {
+    "name": "50_to_100_percent",
+    "step_time_s": 0.7,
+    "load_before_ohm": 80,
+    "load_after_ohm": 40,
+    "minimum_after_step_V": 36.177824575036553,
+    "maximum_after_step_V": 40.589754934443981,
+    "maximum_deviation_after_step_V": 3.8221754249634472,
+    "final_mean_V": 39.799700377011959,
+    "final_ripple_pp_V": 1.6313191937177578
+  },
+  {
+    "name": "100_to_50_percent",
+    "step_time_s": 0.7,
+    "load_before_ohm": 40,
+    "load_after_ohm": 80,
+    "minimum_after_step_V": 38.6855429035965,
+    "maximum_after_step_V": 42.847604373573667,
+    "maximum_deviation_after_step_V": 2.8476043735736667,
+    "final_mean_V": 40.086879755417279,
+    "final_ripple_pp_V": 0.81236597049100112
+  }
+]

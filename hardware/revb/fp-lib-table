@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "BoostPFC_Custom")(type "KiCad")(uri "${KIPRJMOD}/BoostPFC_Custom.pretty")(options "")(descr "Project-local verified Boost PFC power footprints"))
+)

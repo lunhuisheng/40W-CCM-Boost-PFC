@@ -1,0 +1,74 @@
+{
+  "change": "Load open during precharge; 40 ohm load connected at 200 ms",
+  "constants": {
+    "precharge_resistance_ohm": 10,
+    "precharge_release_time_s": 0.2,
+    "inductance_H": 0.00047,
+    "output_capacitance_F": 0.0022,
+    "switching_frequency_Hz": 50000
+  },
+  "cases": [
+    {
+      "name": "No precharge",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\baseline_no_precharge\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 33.919655132290437,
+      "settling_time_2percent_cycle_average_s": 0.559999
+    },
+    {
+      "name": "10 ohm / 80 ms / load connected",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\precharge_10ohm_80ms\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 20.862179950369484,
+      "settling_time_2percent_cycle_average_s": 0.639999
+    },
+    {
+      "name": "10 ohm / 200 ms / load connected",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\archive\\precharge_10ohm_200ms_load_connected\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 20.086474758404442,
+      "settling_time_2percent_cycle_average_s": 0.759999
+    },
+    {
+      "name": "10 ohm / 200 ms / delayed load",
+      "file": "E:\\dianyuan-yingjian\\simulation\\simulink\\BoostPFC_Design\\results\\nominal_24Vac_results.mat",
+      "peak_inductor_current_A": 6.8752991703556754,
+      "settling_time_2percent_cycle_average_s": 0.759999
+    }
+  ],
+  "connection": {
+    "control_type": "Fixed-time command; no voltage-threshold completion detector",
+    "command_time_s": 0.2,
+    "output_voltage_before_connect_V": 29.510563815067496,
+    "rectified_input_at_connect_V": 0,
+    "output_voltage_at_connect_V": 29.510228467751414,
+    "output_minus_rectified_at_connect_V": 29.510228467751414,
+    "next_rectified_peak_time_s": 0.205,
+    "next_rectified_peak_V": 32.541125497244465,
+    "output_voltage_at_next_rectified_peak_V": 29.519511504450424,
+    "rectified_minus_output_at_next_peak_V": 3.0216139927940411,
+    "load_resistance_before_connect_ohm": 1.0E+9,
+    "load_resistance_at_connect_ohm": 40,
+    "peak_inductor_current_before_connect_A": 2.781769157104212,
+    "peak_inductor_current_after_connect_A": 6.8752991703556754,
+    "exceeds_controller_current_reference_limit_4p5A": true
+  },
+  "steady_state": {
+    "baseline_name": "10 ohm / 200 ms / load connected",
+    "updated_name": "10 ohm / 200 ms / delayed load",
+    "output_voltage_mean_baseline_V": 39.821037194219038,
+    "output_voltage_mean_updated_V": 39.821123794325565,
+    "output_voltage_mean_delta_V": 8.66001065276123E-5,
+    "output_ripple_baseline_pp_V": 1.6146861479700618,
+    "output_ripple_updated_pp_V": 1.6152541856796816,
+    "output_ripple_delta_pp_V": 0.00056803770961977307,
+    "power_factor_baseline": 0.9964945549175287,
+    "power_factor_updated": 0.99649454266508586,
+    "power_factor_delta": -1.2252442838089905E-8,
+    "thd_baseline_percent": 5.44802834708778,
+    "thd_updated_percent": 5.4526961618556831,
+    "thd_delta_percent": 0.0046678147679033444,
+    "output_power_baseline_W": 39.470258810997542,
+    "output_power_updated_W": 39.4706254432577,
+    "output_power_delta_W": 0.00036663226016031558
+  },
+  "peak_reduction_vs_200ms_load_connected_percent": 65.771499215018011,
+  "peak_reduction_vs_no_precharge_percent": 79.730633629554191
+}
