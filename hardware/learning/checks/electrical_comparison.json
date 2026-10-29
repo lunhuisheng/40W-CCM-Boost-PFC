@@ -1,0 +1,41 @@
+{
+  "source_sch_sha256": "2C48EE15A7AB56400A25E550534BDA38973D15C336F68315AF6E2D29CF0975B0",
+  "wired_sch_sha256": "8984DEDD7FA9FD3DFAC7ED49E49D22FB1470243785F404B20B936E4267068C11",
+  "pcb_sha256": "2BB23CBACD7A38E5F8491438F23DFACB0250224D6A2BCA3105C27D4691244414",
+  "protected_source_unchanged": true,
+  "pcb_matches_previous_hash": true,
+  "components_source": 79,
+  "components_new": 79,
+  "symbol_instances_including_flags": 82,
+  "pin_count": 238,
+  "net_count": 72,
+  "electrical_differences": [],
+  "value_footprint_differences": [],
+  "symbol_attribute_differences": [],
+  "erc_source": {
+    "warning": 4
+  },
+  "erc_new": {
+    "warning": 4
+  },
+  "new_erc_violations": 0,
+  "removed_erc_violations": 0,
+  "erc_ignored_checks_unchanged": true,
+  "geometry_violations": [],
+  "geometry_mutation_detected": true,
+  "D1": {
+    "1": "/SW",
+    "2": "/SW",
+    "3": "/VOUT"
+  },
+  "R2": {
+    "1": "/PGND",
+    "2": "/BRIDGE_NEG",
+    "3": "/ISENSE_P",
+    "4": "/ISENSE_N"
+  },
+  "NT1": {
+    "1": "/PGND",
+    "2": "/AGND"
+  }
+}

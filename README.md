@@ -2,17 +2,22 @@
 
 面向电源研发岗位展示的学习与工程设计项目。规格：20–28 Vac / 50 Hz 输入，40 V / 1 A / 40 W 输出，50 kHz CCM Boost PFC，平均电流模式双闭环控制。
 
-## 当前状态（2026-10-28）
+## 当前状态（2026-10-29）
 
 - 已完成自主行为级 Simulink 模型、组合启动方案、20/24/28 Vac 输入范围及掉电保持时间仿真。
 - 已完成 KiCad 原理图及 RevB PCB 的人工器件摆放、手工布线、PGND/AGND 分区覆铜；用户本人完成器件摆放与手工布线，工具用于辅助检查和整理。
 - 最新 RevB 静态检查：0 Error、0 Unconnected；34 项 PCB Warning 中 33 项为丝印问题，1 项为已排除检查的 `/RECT_IN` 悬空过孔。H1–H4 是预期的 PCB 专用机械安装孔。详见 [PCB 状态](hardware/REVB_STATUS.md)。
 - 制造文件仅作为预览和本地检查材料；尚未完成厂家审图、裸板下单、焊接、上电或实物性能测试。**不要将本仓库作为可直接生产或安全上电的硬件放行包。**
 
+## 原理图学习入口
+
+新增 **[10 页中文模块导线图册](hardware/learning/BoostPFC_40W_模块导线学习图册.pdf)**，配套 [KiCad 学习版及核查记录](hardware/learning/)。模块内部用导线表达主要电路路径，238 个引脚网表核对 0 电气差异。
+
 ## 仓库内容
 
 | 目录 | 内容 |
 |---|---|
+| [`hardware/learning/`](hardware/learning/) | 模块内导线学习原理图、中文图册、核查记录 |
 | [`hardware/revb/`](hardware/revb/) | 当前 RevB KiCad 工程、项目本地符号与封装库 |
 | [`simulation/BoostPFC_Design/`](simulation/BoostPFC_Design/) | 自主行为级模型、MATLAB 脚本、结构化结果和波形图 |
 | [`docs/`](docs/) | 求职快速展示 PDF、项目文档及关键图 |

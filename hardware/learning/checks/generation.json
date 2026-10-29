@@ -1,0 +1,214 @@
+{
+  "source_sha256": "2C48EE15A7AB56400A25E550534BDA38973D15C336F68315AF6E2D29CF0975B0",
+  "symbols": 82,
+  "wire_segments": 294,
+  "labels_before": 208,
+  "labels_after": 108,
+  "no_connects": 32,
+  "module_members": {
+    "1": [
+      "BR1",
+      "D41",
+      "J1",
+      "K1",
+      "Q2",
+      "R1",
+      "R41",
+      "R51"
+    ],
+    "2": [
+      "C1",
+      "D1",
+      "J2",
+      "L1",
+      "Q1",
+      "R2"
+    ],
+    "3": [
+      "C30",
+      "C31",
+      "D3",
+      "R30",
+      "R31",
+      "R32",
+      "R33",
+      "U2"
+    ],
+    "4": [
+      "C20",
+      "C24",
+      "R20",
+      "R21",
+      "U3"
+    ],
+    "5": [
+      "C10",
+      "C11",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15"
+    ],
+    "6": [
+      "C23",
+      "C25",
+      "R23",
+      "R24",
+      "U4"
+    ],
+    "9": [
+      "C50",
+      "C51",
+      "J3",
+      "U5"
+    ],
+    "7": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "D65",
+      "R61",
+      "R62",
+      "R63",
+      "SW1",
+      "U10",
+      "U6",
+      "U7",
+      "U8",
+      "U9"
+    ],
+    "8": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "J4",
+      "U1"
+    ],
+    "10": [
+      "#FLG01",
+      "#FLG02",
+      "#FLG03",
+      "NT1",
+      "TP1",
+      "TP2",
+      "TP3",
+      "TP4",
+      "TP5",
+      "TP6",
+      "TP7"
+    ]
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "AC INPUT / RECTIFIER / PRECHARGE",
+      "box": [
+        20,
+        50,
+        330,
+        220
+      ]
+    },
+    {
+      "id": 2,
+      "title": "BOOST POWER STAGE",
+      "box": [
+        340,
+        50,
+        750,
+        220
+      ]
+    },
+    {
+      "id": 3,
+      "title": "MOSFET GATE DRIVER",
+      "box": [
+        760,
+        50,
+        1165,
+        220
+      ]
+    },
+    {
+      "id": 4,
+      "title": "KELVIN CURRENT SENSE",
+      "box": [
+        20,
+        235,
+        330,
+        410
+      ]
+    },
+    {
+      "id": 5,
+      "title": "VOLTAGE SENSE",
+      "box": [
+        340,
+        235,
+        600,
+        410
+      ]
+    },
+    {
+      "id": 6,
+      "title": "HARDWARE OVERCURRENT",
+      "box": [
+        610,
+        235,
+        870,
+        410
+      ]
+    },
+    {
+      "id": 9,
+      "title": "AUXILIARY POWER",
+      "box": [
+        880,
+        235,
+        1165,
+        410
+      ]
+    },
+    {
+      "id": 7,
+      "title": "FAULT LATCH / POR / MANUAL RESET",
+      "box": [
+        20,
+        425,
+        600,
+        705
+      ]
+    },
+    {
+      "id": 8,
+      "title": "STM32 CONTROL / SWD / DECOUPLING",
+      "box": [
+        610,
+        425,
+        1165,
+        760
+      ]
+    },
+    {
+      "id": 10,
+      "title": "GROUND STAR / TEST POINTS",
+      "box": [
+        20,
+        715,
+        600,
+        800
+      ]
+    }
+  ]
+}
