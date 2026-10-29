@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T23:00:00",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f4b33f50-7912-4d96-9ee1-2de047dfce8f",
+            "violations": [
+                {
+                    "description": "符号 'GBU6J' 与来源库 'Diode_Bridge' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 BR1 [GBU6J]",
+                            "pos": {
+                                "x": 110.49,
+                                "y": 105.41
+                            },
+                            "uuid": "40c2646a-235b-4ca8-9fcb-3a58517e6eb9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 'BC817' 与来源库 'Transistor_BJT' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 Q2 [BC817]",
+                            "pos": {
+                                "x": 170.18,
+                                "y": 175.26
+                            },
+                            "uuid": "f0f93b79-fc7e-4979-b72f-c46619908fec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 'INA180A2' 与来源库 'Amplifier_Current' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 U3 [INA180A2]",
+                            "pos": {
+                                "x": 240.03,
+                                "y": 312.42
+                            },
+                            "uuid": "fb8b4443-f39d-4626-8dff-74416f4b9d92"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 'STM32G431CBTx' 与来源库 'MCU_ST_STM32G4' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 U1 [STM32G431CBTx]",
+                            "pos": {
+                                "x": 769.62,
+                                "y": 554.99
+                            },
+                            "uuid": "da3c54ef-5c20-46f8-9515-d418ad85b10a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "BoostPFC_40W_RevB.kicad_sch"
+}

@@ -9,6 +9,10 @@
 - 最新 RevB 静态检查：0 Error、0 Unconnected；34 项 PCB Warning 中 33 项为丝印问题，1 项为已排除检查的 `/RECT_IN` 悬空过孔。H1–H4 是预期的 PCB 专用机械安装孔。详见 [PCB 状态](hardware/REVB_STATUS.md)。
 - 制造文件仅作为预览和本地检查材料；尚未完成厂家审图、裸板下单、焊接、上电或实物性能测试。**不要将本仓库作为可直接生产或安全上电的硬件放行包。**
 
+## 最新完整 KiCad 工程
+
+**[打开当前 RevB 完整工程](hardware/latest/)**：用户本人完成布局、手工布线和覆铜的 PCB，配套便于阅读的导线模块化原理图。打开 `hardware/latest/BoostPFC_40W_RevB.kicad_pro`，即可查看两者。旧版文件仍保留供追溯。
+
 ## 原理图学习入口
 
 新增 **[10 页中文模块导线图册](hardware/learning/BoostPFC_40W_模块导线学习图册.pdf)**，配套 [KiCad 学习版及核查记录](hardware/learning/)。模块内部用导线表达主要电路路径，238 个引脚网表核对 0 电气差异。
@@ -17,6 +21,7 @@
 
 | 目录 | 内容 |
 |---|---|
+| [`hardware/latest/`](hardware/latest/) | 当前主入口：完整手工 PCB + 可读模块化原理图 |
 | [`hardware/learning/`](hardware/learning/) | 模块内导线学习原理图、中文图册、核查记录 |
 | [`hardware/revb/`](hardware/revb/) | 当前 RevB KiCad 工程、项目本地符号与封装库 |
 | [`simulation/BoostPFC_Design/`](simulation/BoostPFC_Design/) | 自主行为级模型、MATLAB 脚本、结构化结果和波形图 |
@@ -32,4 +37,4 @@
 
 ## 工程注意事项
 
-在 KiCad 中打开 `hardware/revb/BoostPFC_40W_RevB_ManualLayout.kicad_pro`。运行前先核对本地符号、封装映射及原理图网络。当前项目尚处于制造前审查阶段，不应凭 DRC 结果直接制作或上电。
+在 KiCad 中打开 `hardware/latest/BoostPFC_40W_RevB.kicad_pro`。运行前先核对本地符号、封装映射及原理图网络。当前项目尚处于制造前审查阶段，不应凭 DRC 结果直接制作或上电。

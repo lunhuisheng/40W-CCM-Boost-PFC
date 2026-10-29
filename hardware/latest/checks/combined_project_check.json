@@ -1,0 +1,24 @@
+{
+  "pcb_sha256": "2BB23CBACD7A38E5F8491438F23DFACB0250224D6A2BCA3105C27D4691244414",
+  "sch_sha256": "5A9EFBDB628A532EC28CAE649ACE53BCD4E28574CD3926B32C63743337EF62EC",
+  "footprints": 83,
+  "tracks": 557,
+  "vias": 81,
+  "zones": 2,
+  "compared_numbered_physical_pads": 240,
+  "pad_net_mismatches": [],
+  "schematic_pin_differences": 0,
+  "unconnected": 0,
+  "drc_severity": {
+    "warning": 34
+  },
+  "drc_types": {
+    "silk_overlap": 15,
+    "silk_over_copper": 18,
+    "via_dangling": 1
+  },
+  "schematic_parity_count": 4,
+  "schematic_parity_types": {
+    "extra_footprint": 4
+  }
+}

@@ -1,0 +1,875 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T22:59:58",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "封装 H4",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 105.0
+                    },
+                    "uuid": "210e30b1-98a6-4934-ba13-c7d5df215e4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "封装 H1",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 15.0
+                    },
+                    "uuid": "9ff1725a-2d35-4782-af21-ba4500e303a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "封装 H3",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 105.0
+                    },
+                    "uuid": "e5d7cce5-c4ff-40c8-9f2f-621704b8d273"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "封装 H2",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 15.0
+                    },
+                    "uuid": "e6f550cd-4ac0-460d-a4fd-01c1891f0f74"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "BoostPFC_40W_RevB.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R14 的参考字段",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 51.0
+                    },
+                    "uuid": "3f7ef3bc-f197-4aa8-9fbf-8a28e2287a9b"
+                },
+                {
+                    "description": "R15 的参考字段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 52.0
+                    },
+                    "uuid": "ba431f16-be53-4216-b8e5-590fa41701a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R14 的参考字段",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 51.0
+                    },
+                    "uuid": "3f7ef3bc-f197-4aa8-9fbf-8a28e2287a9b"
+                },
+                {
+                    "description": "R14 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 26.412258,
+                        "y": 50.5225
+                    },
+                    "uuid": "554f0f45-0659-4aab-b3a9-6be226b21520"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "K1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 51.85,
+                        "y": 25.35
+                    },
+                    "uuid": "0a76f6ca-257b-4022-a514-68e340edf45c"
+                },
+                {
+                    "description": "D41 的参考字段",
+                    "pos": {
+                        "x": 43.35,
+                        "y": 25.0
+                    },
+                    "uuid": "9324223b-4ca5-4f62-b62d-103e3892185b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "BR1 的参考字段",
+                    "pos": {
+                        "x": 30.57,
+                        "y": 29.8
+                    },
+                    "uuid": "8b1603f3-6b68-4728-8291-7273142a4345"
+                },
+                {
+                    "description": "BR1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 29.9,
+                        "y": 20.78
+                    },
+                    "uuid": "b8a3cf32-cf98-4fc6-90cb-53586e6f0d4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q2 的参考字段",
+                    "pos": {
+                        "x": 30.15,
+                        "y": 37.0
+                    },
+                    "uuid": "a4580a25-62df-4ca8-8adc-1b52d5fca433"
+                },
+                {
+                    "description": "BR1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 29.9,
+                        "y": 20.78
+                    },
+                    "uuid": "b8a3cf32-cf98-4fc6-90cb-53586e6f0d4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "D41 的参考字段",
+                    "pos": {
+                        "x": 43.35,
+                        "y": 25.0
+                    },
+                    "uuid": "9324223b-4ca5-4f62-b62d-103e3892185b"
+                },
+                {
+                    "description": "K1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 42.5,
+                        "y": 25.09
+                    },
+                    "uuid": "fb9abace-9ce9-4d65-8221-eaa56ae85fe8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "U2 的参考字段",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 55.0
+                    },
+                    "uuid": "6424d64e-dfc7-42a9-966b-314dc65c5b41"
+                },
+                {
+                    "description": "R31 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 91.087742,
+                        "y": 54.5225
+                    },
+                    "uuid": "80ea8da2-be1b-4b71-af31-ab29ec73255b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 95.2,
+                        "y": 53.0
+                    },
+                    "uuid": "7adf86e0-aa0f-46b3-ac14-07a0340524c7"
+                },
+                {
+                    "description": "R31 的参考字段",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 54.0
+                    },
+                    "uuid": "c65a9363-e8d7-4e2d-acd7-751bc02235fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R62 的参考字段",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 95.75
+                    },
+                    "uuid": "775712ad-ff09-46ce-ad47-17bdfbfae18f"
+                },
+                {
+                    "description": "D65 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 99.69,
+                        "y": 93.4
+                    },
+                    "uuid": "9663e285-c0b2-466d-97b2-8a0b91244f2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "D65 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 99.69,
+                        "y": 95.1
+                    },
+                    "uuid": "4852e1ad-3418-4760-b171-902c35a92e4a"
+                },
+                {
+                    "description": "R62 的参考字段",
+                    "pos": {
+                        "x": 100.75,
+                        "y": 95.75
+                    },
+                    "uuid": "775712ad-ff09-46ce-ad47-17bdfbfae18f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C46 的参考字段",
+                    "pos": {
+                        "x": 115.07,
+                        "y": 81.225
+                    },
+                    "uuid": "0a3561d3-6c78-44fa-a237-fc605ad8b485"
+                },
+                {
+                    "description": "C47 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 115.235,
+                        "y": 81.311252
+                    },
+                    "uuid": "2c743a58-3ad5-48db-a774-8294303ed413"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R14 的参考字段",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 51.0
+                    },
+                    "uuid": "3f7ef3bc-f197-4aa8-9fbf-8a28e2287a9b"
+                },
+                {
+                    "description": "F.Cu 上 R14 的焊盘 1 [/VRECT_DIV]",
+                    "pos": {
+                        "x": 27.0,
+                        "y": 50.0
+                    },
+                    "uuid": "3bd997e4-2ad5-421f-b59e-2f075423ccc2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R14 的参考字段",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 51.0
+                    },
+                    "uuid": "3f7ef3bc-f197-4aa8-9fbf-8a28e2287a9b"
+                },
+                {
+                    "description": "F.Cu 上 R14 的焊盘 2 [/VRECT_SENSE]",
+                    "pos": {
+                        "x": 25.35,
+                        "y": 50.0
+                    },
+                    "uuid": "0b002e25-88a2-42d3-be41-6bad34174b32"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C31 的参考字段",
+                    "pos": {
+                        "x": 91.45,
+                        "y": 60.5
+                    },
+                    "uuid": "2d28af93-e0a4-45f1-8c2f-6dfe01845e2c"
+                },
+                {
+                    "description": "F.Cu 上 C30 的焊盘 2 [/PGND]",
+                    "pos": {
+                        "x": 92.05,
+                        "y": 61.0
+                    },
+                    "uuid": "afab0eb3-8bbf-4041-8f58-5f8e20512f09"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U2 的参考字段",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 55.0
+                    },
+                    "uuid": "6424d64e-dfc7-42a9-966b-314dc65c5b41"
+                },
+                {
+                    "description": "F.Cu 上 R31 的焊盘 2 [/GATE_Q1]",
+                    "pos": {
+                        "x": 92.15,
+                        "y": 54.0
+                    },
+                    "uuid": "6a2236e2-3570-499f-b4c4-623c0bf80a9c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R32 的参考字段",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 48.5
+                    },
+                    "uuid": "039ee0de-5d46-4ea3-8bda-6d0f22089105"
+                },
+                {
+                    "description": "F.Cu 上 R32 的焊盘 2 [/PGND]",
+                    "pos": {
+                        "x": 89.35,
+                        "y": 49.5
+                    },
+                    "uuid": "0173b01d-9892-450d-bcdd-c89524c75627"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C31 的参考字段",
+                    "pos": {
+                        "x": 91.45,
+                        "y": 60.5
+                    },
+                    "uuid": "2d28af93-e0a4-45f1-8c2f-6dfe01845e2c"
+                },
+                {
+                    "description": "F.Cu 上 C30 的焊盘 1 [/+12V]",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 61.0
+                    },
+                    "uuid": "ec3fd867-3b21-4c11-8555-4e5dabbd8704"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R12 的参考字段",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 70.0
+                    },
+                    "uuid": "f48ce0a5-6076-4b11-bb17-bc683bdf3a82"
+                },
+                {
+                    "description": "F.Cu 上 R12 的焊盘 1 [/VOUT_SENSE]",
+                    "pos": {
+                        "x": 108.375,
+                        "y": 70.0
+                    },
+                    "uuid": "bc4a0a57-06ef-4008-ad55-5c6d29f9c238"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U3 的参考字段",
+                    "pos": {
+                        "x": 102.5875,
+                        "y": 68.9
+                    },
+                    "uuid": "4e8c9b9a-9407-4866-b04c-b5d1f6c52119"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 5 [/+3V3]",
+                    "pos": {
+                        "x": 101.95,
+                        "y": 68.95
+                    },
+                    "uuid": "eb7f29c1-e7e0-431d-8d8b-733b4431ddd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U7 的参考字段",
+                    "pos": {
+                        "x": 102.6,
+                        "y": 78.1375
+                    },
+                    "uuid": "30899e80-8cc0-4ea2-9205-ce8b928f60a9"
+                },
+                {
+                    "description": "F.Cu 上 U6 的焊盘 8 [/+3V3]",
+                    "pos": {
+                        "x": 102.7,
+                        "y": 79.0
+                    },
+                    "uuid": "c9711e9c-f197-4b40-8ed0-4c38e07302c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U7 的参考字段",
+                    "pos": {
+                        "x": 102.6,
+                        "y": 78.1375
+                    },
+                    "uuid": "30899e80-8cc0-4ea2-9205-ce8b928f60a9"
+                },
+                {
+                    "description": "F.Cu 上 U6 的焊盘 7 [/POR_PRE_N]",
+                    "pos": {
+                        "x": 102.7,
+                        "y": 78.5
+                    },
+                    "uuid": "4fd7636f-9a07-4fe8-a4f0-19a4782f7ba7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U7 的参考字段",
+                    "pos": {
+                        "x": 102.6,
+                        "y": 78.1375
+                    },
+                    "uuid": "30899e80-8cc0-4ea2-9205-ce8b928f60a9"
+                },
+                {
+                    "description": "F.Cu 上 U6 的焊盘 5 [/FAULT_LATCHED]",
+                    "pos": {
+                        "x": 102.7,
+                        "y": 77.5
+                    },
+                    "uuid": "11389d1a-a8d0-491e-88e0-da1fe490bbdb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U7 的参考字段",
+                    "pos": {
+                        "x": 102.6,
+                        "y": 78.1375
+                    },
+                    "uuid": "30899e80-8cc0-4ea2-9205-ce8b928f60a9"
+                },
+                {
+                    "description": "F.Cu 上 U6 的焊盘 6 [/OCP_CLEAR_N]",
+                    "pos": {
+                        "x": 102.7,
+                        "y": 78.0
+                    },
+                    "uuid": "baed61cb-da35-48fc-9de6-0daf84bb142c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C46 的参考字段",
+                    "pos": {
+                        "x": 115.07,
+                        "y": 81.225
+                    },
+                    "uuid": "0a3561d3-6c78-44fa-a237-fc605ad8b485"
+                },
+                {
+                    "description": "F.Cu 上 C47 的焊盘 2 [/AGND]",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 80.1
+                    },
+                    "uuid": "dbfc66b9-8959-40c4-949d-2efced539cd2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C46 的参考字段",
+                    "pos": {
+                        "x": 115.07,
+                        "y": 81.225
+                    },
+                    "uuid": "0a3561d3-6c78-44fa-a237-fc605ad8b485"
+                },
+                {
+                    "description": "F.Cu 上 C47 的焊盘 1 [/+3V3]",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 82.0
+                    },
+                    "uuid": "bcd627ba-3902-4bbe-92ff-fc621120d700"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C25 的参考字段",
+                    "pos": {
+                        "x": 102.95,
+                        "y": 73.43
+                    },
+                    "uuid": "0ded7a62-e9ea-4e2d-88aa-f95af55c7216"
+                },
+                {
+                    "description": "R23 的参考字段",
+                    "pos": {
+                        "x": 101.125,
+                        "y": 73.85
+                    },
+                    "uuid": "b466cb43-5e04-447b-8766-4412c7101f3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C24 的 线段, 位于 B.Silkscreen",
+                    "pos": {
+                        "x": 102.85942,
+                        "y": 67.49
+                    },
+                    "uuid": "545039a5-2c82-4567-aeda-40607ba5546c"
+                },
+                {
+                    "description": "C24 的参考字段",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 67.98
+                    },
+                    "uuid": "92bb51ec-b30e-4305-a051-40876f6d3135"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C24 的参考字段",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 67.98
+                    },
+                    "uuid": "92bb51ec-b30e-4305-a051-40876f6d3135"
+                },
+                {
+                    "description": "C24 的 线段, 位于 B.Silkscreen",
+                    "pos": {
+                        "x": 102.85942,
+                        "y": 68.51
+                    },
+                    "uuid": "9c5b36b9-24e9-44b0-b19c-ad3f177fb508"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C44 的 线段, 位于 B.Silkscreen",
+                    "pos": {
+                        "x": 115.71675,
+                        "y": 80.36558
+                    },
+                    "uuid": "4b840c6c-c38f-4090-b6f8-1cdb6cbb54a9"
+                },
+                {
+                    "description": "C45 的参考字段",
+                    "pos": {
+                        "x": 115.40675,
+                        "y": 80.0
+                    },
+                    "uuid": "96f40ef1-cce5-45b2-8fe0-22eca2f85a31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C24 的参考字段",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 67.98
+                    },
+                    "uuid": "92bb51ec-b30e-4305-a051-40876f6d3135"
+                },
+                {
+                    "description": "B.Cu 上 C24 的焊盘 2 [/AGND]",
+                    "pos": {
+                        "x": 103.775,
+                        "y": 68.0
+                    },
+                    "uuid": "97d7eea5-f451-425a-bf2a-54907738dd8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C24 的参考字段",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 67.98
+                    },
+                    "uuid": "92bb51ec-b30e-4305-a051-40876f6d3135"
+                },
+                {
+                    "description": "B.Cu 上 C24 的焊盘 1 [/+3V3]",
+                    "pos": {
+                        "x": 102.225,
+                        "y": 68.0
+                    },
+                    "uuid": "3fdaafaf-c2f5-461c-b0c5-491714267941"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C45 的参考字段",
+                    "pos": {
+                        "x": 115.40675,
+                        "y": 80.0
+                    },
+                    "uuid": "96f40ef1-cce5-45b2-8fe0-22eca2f85a31"
+                },
+                {
+                    "description": "B.Cu 上 C44 的焊盘 1 [/+3V3]",
+                    "pos": {
+                        "x": 116.22675,
+                        "y": 81.0
+                    },
+                    "uuid": "33b2a2ff-9b5e-463c-bf3d-b3d20b16148e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C45 的参考字段",
+                    "pos": {
+                        "x": 115.40675,
+                        "y": 80.0
+                    },
+                    "uuid": "96f40ef1-cce5-45b2-8fe0-22eca2f85a31"
+                },
+                {
+                    "description": "B.Cu 上 C44 的焊盘 2 [/AGND]",
+                    "pos": {
+                        "x": 116.22675,
+                        "y": 79.45
+                    },
+                    "uuid": "933df5db-1e99-40e2-893f-52ac6e702731"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "comment": "",
+            "description": "Via is not connected or connected on only one layer",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "过孔 [/RECT_IN] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 42.8,
+                        "y": 42.2
+                    },
+                    "uuid": "f81d8e72-f027-4b19-ae2f-8cf8607b2a23"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}
